@@ -1,0 +1,22 @@
+## Description: systemd htop.service configuration file
+## URL: 
+## License: GPL-2.0
+## Copyright (c) 2012 Malcolm J Lewis <malcolmlewis@opensuse.org>
+## Path: System/htop
+## Description:	htop systemd service parameters
+## Type:	string
+## Default:	"d 1 P"
+## ServiceRestart: systemctl restart htop.service
+#
+# Parameters for htop, default delay 1 second and sort by %cpu,
+# see the htop man page for more options.
+#
+HTOP_PARAMS="d 1 P"
+
+## Type:        list(11,12)
+## Default:     "12"
+#
+# /dev/ttyN is used for the htop service as determined by
+# by /etc/udev/rules.d/10-tty.rules.
+#
+HTOP_TTY="12"

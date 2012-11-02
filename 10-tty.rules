@@ -1,0 +1,8 @@
+#
+# /etc/udev/rules.d/10-tty.rules
+#
+# Copyright (c) 2012 Malcolm J Lewis <malcolmlewis@opensuse.org>
+#
+# udev rules file for htop systemd service
+#
+KERNEL=="tty[1]*", SUBSYSTEM=="tty", OWNER="htopd", GROUP="tty" MODE="0660"
