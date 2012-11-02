@@ -20,7 +20,7 @@ There is a simple Makefile included that can be modified for other
 distributions.
 
 
-NOT: You WILL need to trigger udev before starting the service for
+NOTE: You WILL need to trigger udev before starting the service for
 the first time...
 
 udevadm trigger
