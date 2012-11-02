@@ -1,7 +1,8 @@
 systemd-htop-service
 =====================
 
-This is a systemd service to start htop on a virtual terminal (aka /dev/ttyN).
+This is a systemd service to start htop on a virtual terminal
+(aka /dev/ttyN).
 
 INTRODUCTION
 =====================
@@ -18,9 +19,15 @@ macros that run to install the sysconfig and systemd service.
 There is a simple Makefile included that can be modified for other
 distributions.
 
+
+NOT: You WILL need to trigger udev before starting the service for
+the first time...
+
+udevadm trigger
+
 MODIFYING THE SERVICE
 =====================
-At present the /etc/udev/rules.d/10-tty.rules file is hardcoded to
+At present the /lib/udev/rules.d/10-tty.rules file is hardcoded to
 user htopd and the tty group, also /lib/systemd/system/htop.service
 to htopd.
 
@@ -36,11 +43,6 @@ systemctl restart htop.service
 And check all is ok via;
 
 systemctl status htop.service
-
-You might even need to trigger udev...
-
-udevadm trigger
-
 
 CONTACTING THE AUTHOR
 =====================
