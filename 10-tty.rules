@@ -1,5 +1,5 @@
 #
-# /etc/udev/rules.d/10-tty.rules
+# /usr/lib/udev/rules.d/10-tty.rules
 #
 # Copyright (c) 2012 Malcolm J Lewis <malcolmlewis@opensuse.org>
 #

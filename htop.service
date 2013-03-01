@@ -1,4 +1,4 @@
-# /lib/systemd/system/htop.service
+# /usr/lib/systemd/system/htop.service
 #
 # Copyright (c) 2012 Malcolm J Lewis <malcolmlewis@opensuse.org>
 #
@@ -12,8 +12,8 @@ EnvironmentFile=-/etc/sysconfig/htop
 Environment=TERM=linux
 User=htopd
 TTYPath=/dev/tty${HTOP_TTY}
-ExecStart=/bin/sh -c "/usr/bin/htop ${HTOP_PARAMS} > /dev/tty${HTOP_TTY} < /dev/tty${HTOP_TTY}"
-ExecStop=/bin/sh -c "/usr/bin/clear > /dev/tty${HTOP_TTY} < /dev/tty${HTOP_TTY}"
+ExecStart=/usr/bin/sh -c "/usr/bin/htop ${HTOP_PARAMS} > /dev/tty${HTOP_TTY} < /dev/tty${HTOP_TTY}"
+ExecStop=/usr/bin/sh -c "/usr/bin/clear > /dev/tty${HTOP_TTY} < /dev/tty${HTOP_TTY}"
 Restart=always
 RestartSec=0
 TTYReset=yes

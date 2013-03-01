@@ -14,7 +14,7 @@
 #   GNU General Public License 2.0 for more details.
 #
 
-LIB=/lib
+LIB=/usr/lib
 LOCALSTATEDIR=/var
 PREFIX=
 SYSCONFDIR=

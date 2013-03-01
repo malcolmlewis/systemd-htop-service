@@ -27,8 +27,8 @@ udevadm trigger
 
 MODIFYING THE SERVICE
 =====================
-At present the /lib/udev/rules.d/10-tty.rules file is hardcoded to
-user htopd and the tty group, also /lib/systemd/system/htop.service
+At present the /usr/lib/udev/rules.d/10-tty.rules file is hardcoded to
+user htopd and the tty group, also /usr/lib/systemd/system/htop.service
 to htopd.
 
 If you want to run as a different user the udev rules file needs to
