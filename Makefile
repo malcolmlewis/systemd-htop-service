@@ -34,5 +34,5 @@ install:
 	install -m 0644 $(RULESFILE) $(DESTDIR)$(UDEVRULESDIR)/
 	mkdir -p $(DESTDIR)$(UNITDIR)
 	install -m 0644 $(SERVICEFILE) $(DESTDIR)$(UNITDIR)/
-	mkdir -p $(DESTDIR)$(LOCALSTATEDIR)/adm/fillup-templates
+	mkdir -p $(DESTDIR)$(FILLUPDIR)
 	install -m 0644 $(SYSCONFFILE) $(DESTDIR)$(FILLUPDIR)/
