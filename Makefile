@@ -35,4 +35,4 @@ install:
 	mkdir -p $(DESTDIR)$(UNITDIR)
 	install -m 0644 $(SERVICEFILE) $(DESTDIR)$(UNITDIR)/
 	mkdir -p $(DESTDIR)$(LOCALSTATEDIR)/adm/fillup-templates
-	install -m 0644 $(SYSCONFFILE) $(DESTDIR)$(LOCALSTATEDIR)$(FILLUPDIR)/
+	install -m 0644 $(SYSCONFFILE) $(DESTDIR)$(FILLUPDIR)/
