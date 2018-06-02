@@ -14,8 +14,10 @@
 #   GNU General Public License 2.0 for more details.
 #
 
+DATADIR=/usr/share
 LIB=/usr/lib
 LOCALSTATEDIR=/var
+FILLUPDIR=$(DATADIR)/fillup-templates
 PREFIX=
 SYSCONFDIR=
 SYSCONFIGDIR=
@@ -33,4 +35,4 @@ install:
 	mkdir -p $(DESTDIR)$(UNITDIR)
 	install -m 0644 $(SERVICEFILE) $(DESTDIR)$(UNITDIR)/
 	mkdir -p $(DESTDIR)$(LOCALSTATEDIR)/adm/fillup-templates
-	install -m 0644 $(SYSCONFFILE) $(DESTDIR)$(LOCALSTATEDIR)/adm/fillup-templates/
+	install -m 0644 $(SYSCONFFILE) $(DESTDIR)$(LOCALSTATEDIR)$(FILLUPDIR)/
