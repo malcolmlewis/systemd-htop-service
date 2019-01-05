@@ -1,6 +1,6 @@
 #   Simple makefile for systemd-htop-service
 #
-#   Copyright (c) 2012 Malcolm J Lewis <malcolmlewis@opensuse.org>
+#   Copyright (c) 2012-2019 Malcolm J Lewis <malcolmlewis@opensuse.org>
 #
 #   License: GPL-2.0
 #
